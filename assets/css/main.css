@@ -1821,8 +1821,8 @@ input, select, textarea {
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
-	button,
-	.button {
+	button:not(#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, .slick-next, .slick-prev),
+	.button:not(#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, .slick-next, .slick-prev) {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -1855,8 +1855,8 @@ input, select, textarea {
 		input[type="submit"]:after,
 		input[type="reset"]:after,
 		input[type="button"]:after,
-		button:after,
-		.button:after {
+		button:not(#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, .slick-next, .slick-prev):after,
+		.button:not(#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, .slick-next, .slick-prev):after {
 			-moz-transform: scale(0.25);
 			-webkit-transform: scale(0.25);
 			-ms-transform: scale(0.25);
@@ -3290,7 +3290,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #504cac;
 		}
 
 		.wrapper.style2-alt {
@@ -3963,7 +3963,7 @@ input, select, textarea {
 	}
 
 	.skill-logo {
-		width: 50%
+		width: 40%
 	}
 
 	.logo {
@@ -3973,4 +3973,78 @@ input, select, textarea {
 
 	.click {
 		cursor: pointer;
+	}
+
+	.carousel-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 60px;
+		margin-right: 80px;
+		padding: 90px;
+		background-color: rgb(59, 126, 160);
+		border-radius: 50px;
+		height: auto;
+	}
+
+	.video {
+		width: 40%;
+		border-radius: 20px;
+	}
+
+	@media only screen and (max-width: 1026px) {
+		.video {
+			display: none;
+		}
+		.content{
+			width: 100%;
+		}
+		.carousel-slide{
+			justify-content: center;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 20px;
+		}
+		
+		.inner{
+			text-align: center;
+		}
+	}
+
+	.content{
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		width: 60%;
+		-ms-flex: 1;
+	}
+
+	#one {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	}
+
+	.inner p {
+		font-size: 17px;
+	}
+
+	.hd-title{
+		display:flex;
+		text-align: center;
+	}
+
+	.content .inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}

@@ -9,9 +9,13 @@
 		<title>Hyperspace by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 		<script src="./assets/js/minigame.js"></script>
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 	</head>
 	<body class="is-preload">
 
@@ -28,6 +32,7 @@
 							<li> <img class="game-icon" id="game" src="./images/game-off.png"> 
 								<img class="game-icon" id="apple" src="./images/apple-off.png">
 								<img class="game-icon" id="ruby" src="./images/ruby-off.png">
+								<img class="game-icon" id="hd" src="./images/hd-off.png">
 							</li>
 						</ul>
 					</nav>
@@ -41,7 +46,7 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Kevin Liu</h1>
-							<h2>Software Enginner</h2>
+							<h2>Software Engineer</h2>
 								<p> New York City, New York | (347) 649-4188 | kliu33@buffalo.edu</p>
 								
 							<ul class="actions">
@@ -90,49 +95,61 @@
 					</section>
 				
 				<!-- One -->
-				<section id="one" class="wrapper style2 spotlights">
-					<section>
-						<video src="./assets/Kcals.mp4" autoplay muted loop class="image"> </video>
-						<div class="content">
-							<div class="inner">
+				<section  id="one" class="wrapper style2 spotlights">
+					<h1> Projects </h1>
+					<section class="carousel">
+						<section>
+							<div class="carousel-slide">
+							<video src="./assets/Kcals.mp4" autoplay muted loop class="video"></video>
+							<div class="content">
+							  <div class="inner">
 								<h2>Kcals</h2>
 								<p>Kcals is a business messaging application that I cloned from Slack, using a range of technologies such as React, Redux, Javascript, Ruby, Rails, and PostgreSQL. 
-									Kcals enables users to create channels and direct messages to communicate and collaborate effectively, and thanks to Rails Action Cable, 
-									messages are received in real-time without needing to refresh message feeds. </p>
+								Kcals enables users to create channels and direct messages to communicate and collaborate effectively, and thanks to Rails Action Cable, 
+								messages are received in real-time without needing to refresh message feeds.</p>
 								<ul class="actions">
-									<li><a href="https://kcals.onrender.com/" target="_blank" class="button" >Live Site</a></li>
-									<li><a href="https://github.com/kliu33/Kcals" target="_blank" class="button">GitHub</a></li>
+								  <li><a href="https://kcals.onrender.com/" target="_blank" class="button">Live Site</a></li>
+								  <li><a href="https://github.com/kliu33/Kcals" target="_blank" class="button">GitHub</a></li>
 								</ul>
+							  </div>
 							</div>
-						</div>
-					</section>
-					<section>
-						<video src="./assets/the-box.mp4" autoplay muted loop class="image"> </video>
-						<div class="content">
-							<div class="inner">
+							</div>
+						</section>
+						  <section>
+							<div class="carousel-slide">
+							<video src="./assets/the-box.mp4" autoplay muted loop class="video"></video>
+							<div class="content">
+							  <div class="inner">
 								<h2>The Box</h2>
 								<p>The Box is a dynamic MERN stack application that provides users with an engaging platform to enjoy a variety of games while also facilitating communication with other users through a built-in chat feature.</p>
 								<ul class="actions">
-									<li><a href="https://the-box.social/login" target="_blank" class="button">Live Site</a></li>
-									<li><a href="https://github.com/junjiequ1459/TheBox" target="_blank" class="button">GitHub</a></li>
+								  <li><a href="https://the-box.social/login" target="_blank" class="button">Live Site</a></li>
+								  <li><a href="https://github.com/junjiequ1459/TheBox" target="_blank" class="button">GitHub</a></li>
 								</ul>
+							  </div>
 							</div>
 						</div>
-					</section>
-					<section>
-						<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>Honeydew Valley</h2>
+						  </section>
+						  <section>
+							<div class="carousel-slide">
+							<video src="./assets/the-box.mp4" autoplay muted loop class="video"></video>
+							<div class="content">
+							  <div class="inner">
+								<div class="hd-title">
+									<h2>Honeydew Valley </h2> <img class="game-icon click" src="./images/hd-on.png" onClick="collectHd()">
+								</div>
 								<p>A JavaScript-based project inspired by the popular game Stardew Valley. Players take on the role of a farmer, tending to crops, fishing, and decorating your own personal space. Whether you're an experienced gamer or a casual player looking for a relaxing way to unwind, you'll find plenty to enjoy in Honeydew Valley.</p>
 								<ul class="actions">
-									<li><a href="https://kliu33.github.io/SDV/" target="_blank" class="button">Live Site</a></li>
-									<li><a href="https://github.com/kliu33/SDV" target="_blank" class="button">GitHub</a></li>
+								  <li><a href="https://kliu33.github.io/SDV/" target="_blank" class="button">Live Site</a></li>
+								  <li><a href="https://github.com/kliu33/SDV" target="_blank" class="button">GitHub</a></li>
 								</ul>
+							  </div>
 							</div>
 						</div>
-					</section>
+						  </section>
+				  </section>
 				</section>
+				
 
 				<section id="three" class="wrapper style1 fade-up">
 					<div class="inner">
@@ -247,13 +264,16 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+			<script type="text/javascript" src="slick/slick.min.js"></script>
+			<script src="assets/js/carousel.js"></script>
 	</body>
 </html>

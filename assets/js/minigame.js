@@ -18,3 +18,10 @@ function collectRuby() {
         ruby.src = './images/ruby-on.png'
     }
 }
+
+function collectHd() {
+    var hd = document.getElementById("hd")
+    if (hd.getAttribute('src') === './images/hd-off.png') {
+        hd.src = './images/hd-on.png'
+    }
+}
