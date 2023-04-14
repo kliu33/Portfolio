@@ -9,6 +9,7 @@
 		<title>Hyperspace by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="./assets/js/minigame.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -22,7 +23,12 @@
 							<li><a href="#intro">Welcome</a></li>
 							<li><a href="#two">About Me</a></li>
 							<li><a href="#one">Projects</a></li>
-							<li><a href="#three">Get in touch</a></li>
+							<li><a href="#three">Skills</a></li>
+							<li><a href="#four">Get in touch</a></li>
+							<li> <img class="game-icon" id="game" src="./images/game-off.png"> 
+								<img class="game-icon" id="apple" src="./images/apple-off.png">
+								<img class="game-icon" id="ruby" src="./images/ruby-off.png">
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -37,8 +43,9 @@
 							<h1>Kevin Liu</h1>
 							<h2>Software Enginner</h2>
 								<p> New York City, New York | (347) 649-4188 | kliu33@buffalo.edu</p>
+								
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="#two" class="button scrolly">Learn more</a></li>
 							</ul>
 						</div>
 					</section>
@@ -61,7 +68,7 @@
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
 								<section>
-									<span class="icon solid major fa-lock"></span>
+									<span class="icon solid major fa-lock click" onClick="collectGame()"></span>
 									<h3>Aliquam sed nullam</h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
@@ -73,16 +80,6 @@
 								<section>
 									<span class="icon solid major fa-desktop"></span>
 									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
 							</div>
@@ -137,8 +134,53 @@
 					</section>
 				</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+				<section id="three" class="wrapper style1 fade-up">
+					<div class="inner">
+						<div class="container">
+							<h1>Skills</h1>
+							<div class="skills-container">
+								<div class="logo">
+									<img class="skill-logo" src="./images/js.png" alt="js">
+								</div>
+
+								<div class="logo">
+									<img class="skill-logo" src="./images/html5.png" alt="html">
+								</div>
+
+								<div class="logo">
+									<img class="skill-logo click" src="./images/ruby-on.png" alt="ruby" onClick="collectRuby()">
+								</div>
+
+								<div class="logo">
+									<img class="skill-logo" src="./images/rails.png" alt="rails">
+								</div>
+
+								<div class="logo">
+									<img class="skill-logo" src="./images/react.png" alt="react">
+								</div>
+
+								<div class="logo">
+									<img class="skill-logo" src="./images/mongo.png" alt="mongo">
+								</div>
+
+								<div class="logo">
+									<img class="skill-logo" src="./images/node.png" alt="node">
+								</div>
+
+								<div class="logo">
+									<img class="skill-logo" src="./images/psql.png" alt="psql">
+								</div>
+
+								<div class="logo">
+									<img class="skill-logo" src="./images/python.png" alt="python">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Four -->
+					<section id="four" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>I'm always seeking new opportunities to enhance my skills and knowledge. Thanks for visiting my site, and feel free to reach out if you'd like to learn more about me or my work!</p>
@@ -169,7 +211,7 @@
 										<li>
 											<h3>Address</h3>
 											<span>5248 71st ST<br />
-											Queens, NY 11378<br /></span>
+											Queens, New York <img class="game-icon click" src="./images/apple-on.png" onClick="collectApple()"><br /></span>
 										</li>
 										<li>
 											<h3>Email</h3>
