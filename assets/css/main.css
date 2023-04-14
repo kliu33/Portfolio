@@ -4048,3 +4048,8 @@ input, select, textarea {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.skill{
+		text-align: center;
+		text-decoration: underline;
+	}
