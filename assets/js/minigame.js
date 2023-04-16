@@ -1,5 +1,5 @@
 audio = new Audio('./assets/collect.mp3')
-
+audio.volume = 0.3;
 function collectGame() {
     var game = document.getElementById("game")
     if (game.getAttribute('src') === './images/game-off.png') {
