@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background-image: linear-gradient(rgba(29, 98, 107, 0.596), rgba(31, 52, 122, 0.623));
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3278,31 +3278,31 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			/* background-color: #261c3e; */
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			/* background-color: #5e42a6; */
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			/* background-color: #493382; */
 		}
 
 		.wrapper.style2 {
-			background-color: #504cac;
+			/* background-color: #504cac; */
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			/* background-color: #3e4094; */
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			/* background-color: #b74e91; */
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			/* background-color: #953d75; */
 		}
 
 		.wrapper.fullscreen {
@@ -3412,7 +3412,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		/* background-color: #5e42a6; */
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3899,7 +3899,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							/* background-color: #b74e91; */
 						}
 
 		}
@@ -3916,10 +3916,12 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("./images/tokyo.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+  		background-blend-mode: multiply;
 	}
 
 		#intro p {
