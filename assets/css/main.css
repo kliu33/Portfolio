@@ -253,6 +253,7 @@ input, select, textarea {
 		justify-content: center;
 		box-sizing: border-box;
 		align-items: stretch;
+		border-top: solid rgba(160, 160, 160, 0.164) 4px;
 	}
 
 		.row > * {
@@ -329,6 +330,8 @@ input, select, textarea {
 
 		.row > .col-6 {
 			width: 50%;
+			display: flex;
+			justify-content: center;
 		}
 
 		.row > .off-6 {
@@ -434,13 +437,8 @@ input, select, textarea {
 					padding-top: 25px;
 				}
 
-		.row {
-			margin-top: -50px;
-			margin-left: -50px;
-		}
-
 			.row > * {
-				padding: 50px 0 0 50px;
+				padding: 50px 0 0 0px;
 			}
 
 			.row.gtr-uniform {
@@ -676,14 +674,8 @@ input, select, textarea {
 						.row.gtr-50.gtr-uniform > * {
 							padding-top: 20px;
 						}
-
-				.row {
-					margin-top: -40px;
-					margin-left: -40px;
-				}
-
 					.row > * {
-						padding: 40px 0 0 40px;
+						padding: 40px 0 0 0px;
 					}
 
 					.row.gtr-uniform {
@@ -2199,7 +2191,8 @@ input, select, textarea {
 
 	.wrapper {
 		margin-bottom: 5em;
-		padding: 5em;
+		padding-top: 5em;
+		padding-bottom: 5em;
 	}
 
 		.wrapper.style1 {
