@@ -1,279 +1,275 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
+	Twenty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>Twenty by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-		<script src="./assets/js/minigame.js"></script>
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="index is-preload">
+		<div id="page-wrapper">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>
+					<nav id="nav">
 						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#two">About Me</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#three">Skills</a></li>
-							<li><a href="#four">Get in touch</a></li>
-							<li> <img class="game-icon" id="game" src="./images/game-off.png"> 
-								<img class="game-icon" id="apple" src="./images/apple-off.png">
-								<img class="game-icon" id="ruby" src="./images/ruby-off.png">
-								<img class="game-icon" id="hd" src="./images/hd-off.png">
+							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Layouts</a>
+								<ul>
+									<li><a href="left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Dolore Sed</a></li>
+											<li><a href="#">Consequat</a></li>
+											<li><a href="#">Lorem Magna</a></li>
+											<li><a href="#">Sed Magna</a></li>
+											<li><a href="#">Ipsum Nisl</a></li>
+										</ul>
+									</li>
+								</ul>
 							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
 						</ul>
 					</nav>
-				</div>
-			</section>
+				</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			<!-- Banner -->
+				<section id="banner">
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Kevin Liu</h1>
-							<h2>Software Engineer</h2>
-								<p> New York City, New York | (347) 649-4188 | kliu33@buffalo.edu</p>
-								
-							<ul class="actions">
-								<li><a href="#two" class="button scrolly">Learn more</a></li>
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+					<div class="inner">
+
+						<header>
+							<h2>TWENTY</h2>
+						</header>
+						<p>This is <strong>Twenty</strong>, a free
+						<br />
+						responsive template
+						<br />
+						by <a href="http://html5up.net">HTML5 UP</a>.</p>
+						<footer>
+							<ul class="buttons stacked">
+								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
 							</ul>
-						</div>
-					</section>
+						</footer>
 
+					</div>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Hi, I'm Kevin Liu,</h2>
-							<p> a full stack developer with a passion for solving complex problems and delivering high-quality solutions. My experience in React, Redux, Rails, and other technologies enables me to create robust and efficient solutions for web development challenges.
-								</p><p>
-								As a lifelong gamer, I approach development with a focus on problem-solving and innovation. Games have taught me the importance of user experience and engagement, and I apply this knowledge to create engaging and intuitive interfaces for websites and applications. Two of my three most recent projects are game-based, demonstrating my interest and expertise in this area.
-								</p>
+				</section>
 
-								<p>Just like in games, good web development requires efficient use of resources. I take pride in my ability to maximize efficiency and get the most out of the tools at my disposal. In fact, my experience as a top-ranked player in many games has honed my skills in resource management and efficiency, which translates seamlessly into my work as a developer.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock click" onClick="collectGame()"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
-						</div>
-					</section>
-				
-				<!-- One -->
-				<section  id="one" class="wrapper style2 spotlights">
-					<h1> Projects </h1>
-					<section class="carousel">
-						<section>
-							<div class="carousel-slide">
-							<video src="./assets/Kcals.mp4" autoplay muted loop class="video"></video>
-							<div class="content">
-							  <div class="inner">
-								<h2>Kcals</h2>
-								<p>Kcals is a business messaging application that I cloned from Slack, using a range of technologies such as React, Redux, Javascript, Ruby, Rails, and PostgreSQL. 
-								Kcals enables users to create channels and direct messages to communicate and collaborate effectively, and thanks to Rails Action Cable, 
-								messages are received in real-time without needing to refresh message feeds.</p>
-								<ul class="actions">
-								  <li><a href="https://kcals.onrender.com/" target="_blank" class="button">Live Site</a></li>
-								  <li><a href="https://github.com/kliu33/Kcals" target="_blank" class="button">GitHub</a></li>
-								</ul>
-							  </div>
-							</div>
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon solid fa-chart-bar"></span>
+						<h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP
+						<br />
+						I decided to give it a really creative name.</h2>
+						<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+						<br />
+						it's minimally designed, fully responsive, built on HTML5/CSS3,
+						and, like all my stuff,
+						<br />
+						released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style2 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-8 col-12-narrower">
+
+									<header>
+										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+									</header>
+									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
+									<footer>
+										<ul class="buttons">
+											<li><a href="#" class="button">Find Out More</a></li>
+										</ul>
+									</footer>
+
+								</div>
+								<div class="col-4 col-12-narrower imp-narrower">
+
+									<ul class="featured-icons">
+										<li><span class="icon fa-clock"><span class="label">Feature 1</span></span></li>
+										<li><span class="icon solid fa-volume-up"><span class="label">Feature 2</span></span></li>
+										<li><span class="icon solid fa-laptop"><span class="label">Feature 3</span></span></li>
+										<li><span class="icon solid fa-inbox"><span class="label">Feature 4</span></span></li>
+										<li><span class="icon solid fa-lock"><span class="label">Feature 5</span></span></li>
+										<li><span class="icon solid fa-cog"><span class="label">Feature 6</span></span></li>
+									</ul>
+
+								</div>
 							</div>
 						</section>
-						  <section>
-							<div class="carousel-slide">
-							<video src="./assets/the-box.mp4" autoplay muted loop class="video"></video>
-							<div class="content">
-							  <div class="inner">
-								<h2>The Box</h2>
-								<p>The Box is a dynamic MERN stack application that provides users with an engaging platform to enjoy a variety of games while also facilitating communication with other users through a built-in chat feature.</p>
-								<ul class="actions">
-								  <li><a href="https://the-box.social/login" target="_blank" class="button">Live Site</a></li>
-								  <li><a href="https://github.com/junjiequ1459/TheBox" target="_blank" class="button">GitHub</a></li>
+
+					<!-- Two -->
+						<section class="wrapper style1 container special">
+							<div class="row">
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon solid featured fa-check"></span>
+										<header>
+											<h3>This is Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon solid featured fa-check"></span>
+										<header>
+											<h3>Also Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon solid featured fa-check"></span>
+										<header>
+											<h3>Probably Something</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+									</section>
+
+								</div>
+							</div>
+						</section>
+
+					<!-- Three -->
+						<section class="wrapper style3 container special">
+
+							<header class="major">
+								<h2>Next look at this <strong>cool stuff</strong></h2>
+							</header>
+
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<header>
+											<h3>A Really Fast Train</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>An Airport Terminal</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Hyperspace Travel</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>And Another Train</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+							</div>
+
+							<footer class="major">
+								<ul class="buttons">
+									<li><a href="#" class="button">See More</a></li>
 								</ul>
-							  </div>
-							</div>
-						</div>
-						  </section>
-						  <section>
-							<div class="carousel-slide">
-							<video src="./assets/the-box.mp4" autoplay muted loop class="video"></video>
-							<div class="content">
-							  <div class="inner">
-								<div class="hd-title">
-									<h2>Honeydew Valley </h2> <img class="game-icon click" src="./images/hd-on.png" onClick="collectHd()">
-								</div>
-								<p>A JavaScript-based project inspired by the popular game Stardew Valley. Players take on the role of a farmer, tending to crops, fishing, and decorating your own personal space. Whether you're an experienced gamer or a casual player looking for a relaxing way to unwind, you'll find plenty to enjoy in Honeydew Valley.</p>
-								<ul class="actions">
-								  <li><a href="https://kliu33.github.io/SDV/" target="_blank" class="button">Live Site</a></li>
-								  <li><a href="https://github.com/kliu33/SDV" target="_blank" class="button">GitHub</a></li>
-								</ul>
-							  </div>
-							</div>
-						</div>
-						  </section>
-				  </section>
-				</section>
-				
+							</footer>
 
-				<section id="three" class="wrapper style1 fade-up">
-					<div class="inner">
-						<div class="container skill">
-							<h1>Skills</h1>
-							<div class="skills-container">
-								<div class="logo">
-									<img class="skill-logo" src="./images/js.png" alt="js">
-								</div>
+						</section>
 
-								<div class="logo">
-									<img class="skill-logo" src="./images/html5.png" alt="html">
-								</div>
+				</article>
 
-								<div class="logo">
-									<img class="skill-logo click" src="./images/ruby-on.png" alt="ruby" onClick="collectRuby()">
-								</div>
+			<!-- CTA -->
+				<section id="cta">
 
-								<div class="logo">
-									<img class="skill-logo" src="./images/rails.png" alt="rails">
-								</div>
+					<header>
+						<h2>Ready to do <strong>something</strong>?</h2>
+						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+					</header>
+					<footer>
+						<ul class="buttons">
+							<li><a href="#" class="button primary">Take My Money</a></li>
+							<li><a href="#" class="button">LOL Wut</a></li>
+						</ul>
+					</footer>
 
-								<div class="logo">
-									<img class="skill-logo" src="./images/react.png" alt="react">
-								</div>
-
-								<div class="logo">
-									<img class="skill-logo" src="./images/mongo.png" alt="mongo">
-								</div>
-
-								<div class="logo">
-									<img class="skill-logo" src="./images/node.png" alt="node">
-								</div>
-
-								<div class="logo">
-									<img class="skill-logo" src="./images/psql.png" alt="psql">
-								</div>
-
-								<div class="logo">
-									<img class="skill-logo" src="./images/python.png" alt="python">
-								</div>
-							</div>
-						</div>
-					</div>
 				</section>
 
-				<!-- Four -->
-					<section id="four" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>I'm always seeking new opportunities to enhance my skills and knowledge. Thanks for visiting my site, and feel free to reach out if you'd like to learn more about me or my work!</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>5248 71st ST<br />
-											Queens, New York <img class="game-icon click" src="./images/apple-on.png" onClick="collectApple()"><br /></span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">kliu33@buffalo.edu</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(347) 649-4188</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/kliu33" target="_blank"  class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://wellfound.com/u/kevin-liu-149" target="_blank"  class="icon brands fa-angellist"><span class="label">AngelList</span></a></li>
-												<li><a href="https://www.linkedin.com/in/kliu33/" target="_blank"  class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+			<!-- Footer -->
+				<footer id="footer">
 
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<!-- <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+					<ul class="icons">
+						<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
 					</ul>
-				</div>
-			</footer>
+
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
 
 		<!-- Scripts -->
-			<!-- <script src="assets/js/jquery.min.js"></script> -->
-			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="slick/slick.min.js"></script>
-			<script src="assets/js/carousel.js"></script>
+
 	</body>
 </html>
