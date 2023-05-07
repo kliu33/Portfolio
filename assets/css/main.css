@@ -3347,3 +3347,9 @@ input, select, textarea {
 		z-index: 1030;
 		background-color: rgb(52, 27, 43);;
 	}
+
+	.pfp {
+		width: 10%;
+		border-radius: 100px;
+		margin-top: -80px;
+	}
