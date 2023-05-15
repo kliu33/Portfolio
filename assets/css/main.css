@@ -3353,3 +3353,8 @@ input, select, textarea {
 		border-radius: 100px;
 		margin-top: -80px;
 	}
+
+	#about-me{
+		padding-left: 50px;
+		padding-right: 50px
+	}
